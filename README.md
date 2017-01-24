@@ -20,7 +20,7 @@ The development was done iteratively. I worked very closely with the designers t
 
 The application allowed the designers to copy existing designs between customer accounts. This was something that the old system could not do. It copied all the CSS properties and made copies of all images stored on S3. This made it very easy for the designer to design on test accounts and get design approval and easily roll the design out on the client's production account.
 
-From a coding point of view the thing I like best about this is the the way the various colours are generated from a single brand colour. The design of the client facing application has various elements that are tints and shaded of the main colour. I used the SASS functions to create these colours automatically. Ultimately all the properties were fed into an ERB that generated the required CSS file for each client account. That CSS file was then cached until the next time the brand was changed.
+From a coding point of view the thing I like best about this is the the way the various colours are generated from a single brand colour. The design of the client facing application has various elements that are tints and shades of the main colour. I used the SASS functions to create these colours automatically. Ultimately all the properties were fed into an ERB that generated the required CSS file for each client account. That CSS file was then cached until the next time the brand was changed.
 
 The application cut the time for creating a brand down from 4 hours to around 1 hour. This freed our designer up for other work. This also had a positive effect on sales as demo brands could be created more easily for prospective clients.
 
