@@ -8,7 +8,7 @@ This project answers the following questions
 - [Question 4 - create a rugby squad](#question-4)
 
 ## Question 1
-What's your proudest achievement? Something you've done in work, some random side project, code or otherwise. Just make sure you explain what it is that makes you so proud of it.
+**What's your proudest achievement? Something you've done in work, some random side project, code or otherwise. Just make sure you explain what it is that makes you so proud of it.**
 
 From a professional point of view my proudest achievement is building a tool that enabled our designer to brand our public facing software. The previous system for branding the user interface of the software was error prone and time consuming. There was a need to improved this.
 
@@ -25,7 +25,7 @@ From a coding point of view the thing I like best about this is the the way the 
 The application cut the time for creating a brand down from 4 hours to around 1 hour. This freed our designer up for other work. This also had a positive effect on sales as demo brands could be created more easily for prospective clients.
 
 ## Question 2
-What's the most interesting technical article you've read recently? What did you like about it and why should we take a look at it?
+**What's the most interesting technical article you've read recently? What did you like about it and why should we take a look at it?**
 
 It’s always your fault - David Heinemeier Hansson
 
@@ -40,17 +40,17 @@ The article says you should try and find out where you are to blame. To think ab
 This kind of introspection is good. Asking the question "what could I have done better?" can result in big improvements.
 
 ## Question 3
-Write some code that will flatten an array of arbitrarily nested arrays of integers into a flat array of integers. e.g. `[[1,2,[3]],4]` -> `[1,2,3,4]`. This is an opportunity to show us your understanding of computer science fundamentals.
+**Write some code that will flatten an array of arbitrarily nested arrays of integers into a flat array of integers. e.g. `[[1,2,[3]],4]` -> `[1,2,3,4]`. This is an opportunity to show us your understanding of computer science fundamentals.**
 
 This is implemented in the arrays_controller in this project. I have implemented a private method called flatten_array. This takes an array as a parameter and returns a flattened array. The method is recursive. This enables it to deal with any level of nesting. To see it in action run the Rails app and go to http://localhost:3000/arrays
 
 I have added some tests for this in spec/controllers/arrays_controller_spec.rb
 
 ## Question 4
-Given a file (`rugby_athletes.json` in this directory), containing a JSON encoded list of Squads and Athletes, plus a squad ID, output an entirely new squad of 15 for a rugby team using the following criteria
+**Given a file (`rugby_athletes.json` in this directory), containing a JSON encoded list of Squads and Athletes, plus a squad ID, output an entirely new squad of 15 for a rugby team using the following criteria
   - No players in the team should be injured
   - The team should be a valid Rugby Union team - (2 props, 1 hooker, 2 locks, 2 flankers, 1 Number Eight, 1 Scrum Half, 1 Out Half, 2 Centres, 2 Wingers, 1 Full Back)
-  - The output should contain at least the following - squad name, squad ID and a list of the players with their position, eg 'prop - Colm Doyle'
+  - The output should contain at least the following - squad name, squad ID and a list of the players with their position, eg 'prop - Colm Doyle'**
 
 This is implemented in the squads_controller in this project. There is a private method that takes an array hashes containing all the athletes. It removes the injured players. Based on valid_squad hash which defines how many players of each type should be on a team it finds the correct number of players of each position to make up a full team. It currently takes the first players for each position. Therefore the team will always be the same.
 
