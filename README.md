@@ -47,10 +47,10 @@ This is implemented in the arrays_controller in this project. I have implemented
 I have added some tests for this in spec/controllers/arrays_controller_spec.rb
 
 ## Question 4
-**Given a file (`rugby_athletes.json` in this directory), containing a JSON encoded list of Squads and Athletes, plus a squad ID, output an entirely new squad of 15 for a rugby team using the following criteria
-  - No players in the team should be injured
-  - The team should be a valid Rugby Union team - (2 props, 1 hooker, 2 locks, 2 flankers, 1 Number Eight, 1 Scrum Half, 1 Out Half, 2 Centres, 2 Wingers, 1 Full Back)
-  - The output should contain at least the following - squad name, squad ID and a list of the players with their position, eg 'prop - Colm Doyle'**
+**Given a file (`rugby_athletes.json` in this directory), containing a JSON encoded list of Squads and Athletes, plus a squad ID, output an entirely new squad of 15 for a rugby team using the following criteria**
+  - **No players in the team should be injured**
+  - **The team should be a valid Rugby Union team - (2 props, 1 hooker, 2 locks, 2 flankers, 1 Number Eight, 1 Scrum Half, 1 Out Half, 2 Centres, 2 Wingers, 1 Full Back)**
+  - **The output should contain at least the following - squad name, squad ID and a list of the players with their position, eg 'prop - Colm Doyle'**
 
 This is implemented in the squads_controller in this project. There is a private method that takes an array hashes containing all the athletes. It removes the injured players. Based on valid_squad hash which defines how many players of each type should be on a team it finds the correct number of players of each position to make up a full team. It currently takes the first players for each position. Therefore the team will always be the same.
 
