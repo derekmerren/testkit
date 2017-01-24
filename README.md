@@ -1,15 +1,11 @@
 # README
 This project answers the following questions
 
-
-# Questions
-- What's your proudest achievement? Something you've done in work, some random side project, code or otherwise. Just make sure you explain what it is that makes you so proud of it.
-- What's the most interesting technical article you've read recently? What did you like about it and why should we take a look at it?
-- Write some code that will flatten an array of arbitrarily nested arrays of integers into a flat array of integers. e.g. `[[1,2,[3]],4]` -> `[1,2,3,4]`. This is an opportunity to show us your understanding of computer science fundamentals. Avoid using built-in language methods like `Array.flatten`
-- Given a file (`rugby_athletes.json` in this directory), containing a JSON encoded list of Squads and Athletes, plus a squad ID, output an entirely new squad of 15 for a rugby team using the following criteria
-  - No players in the team should be injured
-  - The team should be a valid Rugby Union team - (2 props, 1 hooker, 2 locks, 2 flankers, 1 Number Eight, 1 Scrum Half, 1 Out Half, 2 Centres, 2 Wingers, 1 Full Back)
-  - The output should contain at least the following - squad name, squad ID and a list of the players with their position, eg 'prop - Colm Doyle'
+# Contents
+- [Question 1 - proudest achievement](#question-1)
+- [Question 2 - interesting technical article](#question-2)
+- [Question 3 - flatten arrays](#question-3)
+- [Question 4 - create a rugby squad](#question-4)
 
 ## Question 1
 What's your proudest achievement? Something you've done in work, some random side project, code or otherwise. Just make sure you explain what it is that makes you so proud of it.
