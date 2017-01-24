@@ -16,7 +16,7 @@ class ArraysController < ApplicationController
 
   def flatten_array array
     # If element is not an array return it as part of single element array.
-    # it does not need to be flattene.
+    # it does not need to be flattened.
     return [array] unless array.kind_of?(Array)
 
     # Otherwise flatten each element of the array and add it to the new array
