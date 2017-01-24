@@ -1,0 +1,17 @@
+<h1>Testkit - create a rugby squad</h1>
+
+<h2>Selected Team</h2>
+<p>Squad Name - The Randarians</p>
+<p>Squad ID - <%= @squad_id %></p>
+<ul>
+  <% @selected_squad.each do |a| %>
+    <li><%= a['position'] %> -- <%= a['name'] %> (<%= a['is_injured'] == true ? 'injured' : 'fit' %>)</li>
+  <% end %>
+</ul>
+
+<h2>All Athletes</h2>
+<ul>
+  <% @athletes.each do |a| %>
+    <li><%= a['squad_id'] %> - <%= a['position'] %> -- <%= a['name'] %> (<%= a['is_injured'] == true ? 'injured' : 'fit' %>)</li>
+  <% end %>
+</ul>
